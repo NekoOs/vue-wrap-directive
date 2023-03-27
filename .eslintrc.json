@@ -1,0 +1,125 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue"
+  ],
+  "rules": {
+    // Business Rules
+    "semi": [
+      "error",
+      "always"
+    ],
+    // https://eslint.org/docs/latest/rules/semi
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    // https://eslint.org/docs/latest/rules/comma-dangle
+    "no-new-wrappers": "error",
+    // https://eslint.org/docs/latest/rules/no-new-wrappers
+    // Standard Rules
+    "vue/no-v-html": 0,
+    "vue/order-in-components": [
+      "error",
+      {
+        "order": [
+          "el",
+          "name",
+          "key",
+          "parent",
+          "functional",
+          [
+            "delimiters",
+            "comments"
+          ],
+          [
+            "components",
+            "directives",
+            "filters"
+          ],
+          "extends",
+          "mixins",
+          [
+            "provide",
+            "inject"
+          ],
+          "ROUTER_GUARDS",
+          "layout",
+          "middleware",
+          "validate",
+          "scrollToTop",
+          "transition",
+          "loading",
+          "inheritAttrs",
+          "model",
+          [
+            "props",
+            "propsData"
+          ],
+          "emits",
+          "setup",
+          "asyncData",
+          "data",
+          "fetch",
+          "head",
+          "computed",
+          "watch",
+          "watchQuery",
+          "LIFECYCLE_HOOKS",
+          "methods",
+          [
+            "template",
+            "render"
+          ],
+          "renderError"
+        ]
+      }
+    ],
+    "vue/attributes-order": [
+      "error",
+      {
+        "order": [
+          "DEFINITION",
+          "LIST_RENDERING",
+          "CONDITIONALS",
+          "RENDER_MODIFIERS",
+          "GLOBAL",
+          [
+            "UNIQUE",
+            "SLOT"
+          ],
+          "TWO_WAY_BINDING",
+          "OTHER_DIRECTIVES",
+          "OTHER_ATTR",
+          "EVENTS",
+          "CONTENT"
+        ],
+        "alphabetical": true
+      }
+    ]
+  }
+}

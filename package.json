@@ -1,0 +1,33 @@
+{
+  "name": "vue-wrap-directive",
+  "version": "0.1.0",
+  "description": "A simple directive to handle conditional render of any DOM element or Vue component",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "vue",
+    "wrap",
+    "javascript",
+    "js",
+    "directive",
+    "render"
+  ],
+  "author": "Neder Alfonso Fandiño Andrade <neafand@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.5.0",
+    "@vue/test-utils": "^1.3.4",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "jest": "^27.0.5",
+    "vue": "^2.6.14",
+    "vue-jest": "^4.0.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
